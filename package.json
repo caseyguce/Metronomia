@@ -1,6 +1,6 @@
 {
   "private": true,
-  "homepage": "https://caseyguce.github.io/Metronomia/",
+  "homepage": "https://caseyguce.github.io/Metronomia",
   "name": "metronomia",
   "version": "0.0.0",
   "license": "MIT",
@@ -11,7 +11,8 @@
     "lint": "eslint src",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build",
+    "build:gh": "GITHUB_PAGES=Metronomia preact build && dot-json ./build/manifest.json start_url \"/Metronomia/\""
   },
   "eslintConfig": {
     "extends": "preact",
@@ -20,6 +21,7 @@
     ]
   },
   "devDependencies": {
+    "dot-json": "^1.2.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
