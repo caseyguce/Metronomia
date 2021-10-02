@@ -1,4 +1,4 @@
-import './style';
-import App from './components/app';
+import './style/index.css';
+import Metronomia from './components/Metronomia/Metronomia';
 
-export default App;
+export default Metronomia;

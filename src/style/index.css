@@ -15,6 +15,39 @@ html, body {
 	box-sizing: border-box;
 }
 
-#app {
-	height: 100%;
+.wrapper {
+	margin: auto;
+	width: 30%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper input:hover {
+	cursor: pointer;
+}
+
+.wrapper .startButtonStyle {
+	padding: 5px;
+	font-size: 18px;
+	width: 50%;
+	margin: auto;
+	background-color: transparent;
+	border: 2px solid cornflowerblue;
+	color: cornflowerblue;
+	border-radius: 10px;
+	transition: 100ms;
+}
+
+.wrapper .startButtonStyle:hover {
+	background-color: cornflowerblue;
+	color: white;
+}
+
+@media only screen and (max-width: 800px) {
+	.wrapper { width: 50%; }
+}
+
+@media only screen and (max-width: 400px) {
+	.wrapper { width: 80%; }
 }
