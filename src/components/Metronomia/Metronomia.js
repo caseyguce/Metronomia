@@ -1,7 +1,7 @@
 import { Component } from 'preact';
 import MetronomiaDefaults from './defaults';
 
-class Metronomia extends Component {
+export class Metronomia extends Component {
 	constructor(props, state) {
 		super(props, state);
 		this.state = {

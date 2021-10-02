@@ -1,8 +1,7 @@
-import baseroute from '../baseroute';
 import { Metronomia } from './Metronomia/Metronomia';
 
 const App = () => {
-    <Metronomia path={`${baseroute}/`} />
+    return <Metronomia />;
 }
 
 export default App;
