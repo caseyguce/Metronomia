@@ -7,7 +7,7 @@ class Metronomia extends Component {
 		this.state = {
 			bpm: MetronomiaDefaults.DefaultBPM,
 			isPlaying: MetronomiaDefaults.DefaultPlayMode,
-			audioBeat: new Audio(MetronomiaDefaults.AudioPath)
+			audioBeat: typeof Audio !== 'undefined' ? new Audio(MetronomiaDefaults.AudioPath) : 'undefined'
 		};
 	}
 
